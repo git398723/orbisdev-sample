@@ -89,7 +89,7 @@ void updateController()
 	{
 		if(orbisPadGetButtonPressed(ORBISPAD_L2|ORBISPAD_R2) || orbisPadGetButtonHold(ORBISPAD_L2|ORBISPAD_R2))
 		{
-			debugNetPrintf(DEBUGNET_DEBUG,"Combo L2R2 pressed\n");
+			debugNetPrintf(DEBUGNET_DEBUG,"Combo L2R2 pressed!\n");
 			buttons=orbisPadGetCurrentButtonsPressed();
 			buttons&= ~(ORBISPAD_L2|ORBISPAD_R2);
 			orbisPadSetCurrentButtonsPressed(buttons);
